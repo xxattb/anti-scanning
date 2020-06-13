@@ -14,3 +14,16 @@ Features Of Script :
 (3) Written with the help of IPTABLE hence no System Performance issue like CPU high,Memory usage etc. No third party tool is used
 
 Note: You can add or remove port no. as per your requirement.
+Now we will create the script
+
+Step 1: Create a bash script with the name of iptablescript.sh
+
+vi /root/iptablescript.sh
+Step 2: Now paste the below given script contents in your bash script file iptablescript.sh
+Step 3: Make the Read Write Execute permission only to root user. (For security)
+chmod 700 /root/iptablescript.sh
+  chown root:root /root/iptablescript.sh
+Step 4 : Now run the script
+./root/iptablescript.sh
+Step 6: Now check the IPTABLES rule with following command
+iptables -nL
